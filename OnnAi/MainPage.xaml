@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="OnnxAi.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OnnxAi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid
+        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+        IsRightTapEnabled="False">
+
+        <StackPanel Margin="50">
+            
+            <!--General information-->
+            <TextBlock Name="MainTitle"
+                       TextWrapping="WrapWholeWords"
+                       FontStyle="Normal"
+                       FontWeight="SemiBold"
+                       FontSize="40"
+                       TextAlignment="Center"
+                       Text="Demo MIEE - Nov 2020"
+                       Foreground="Purple">
+            </TextBlock>
+            <TextBlock Name="Author"
+                       TextWrapping="WrapWholeWords"
+                       FontStyle="Normal"
+                       FontWeight="Normal"
+                       FontSize="30"
+                       TextAlignment="Center"
+                       Text="Angelo Gino Varrati"
+                       Foreground="Purple"
+                       Margin="10">
+            </TextBlock>
+            <Image
+                Source="Assets/MSFT-Logo.png"
+                Width="400"
+                Margin="35">
+            </Image>
+            
+            <!--Image picker-->
+            <Button Name="ButtonRun"
+                    ToolTipService.ToolTip="Carica l'immagine"
+                    Width="80"
+                    Height="80"
+                    Click="ButtonRun_Click" 
+                    IsEnabled="True" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Top">
+                <Button.Content>
+                    <SymbolIcon Symbol="Upload" />
+                </Button.Content>
+            </Button>
+
+            <!--Result and status text block-->
+            <TextBlock x:Name="StatusBlock" 
+                       FontWeight="Bold" 
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center"
+                       Text="Clicca sul bottone per caricare l'immagine da far valutare al modello ONNX!"
+                       Margin="20"/>
+
+            <!--Image preview -->
+            <Image
+                Name="UIPreviewImage"
+                Stretch="Uniform"
+                MaxWidth="300"
+                MaxHeight="300"
+                Margin="20"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
