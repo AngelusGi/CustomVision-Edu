@@ -18,16 +18,16 @@
                        TextWrapping="WrapWholeWords"
                        FontStyle="Normal"
                        FontWeight="SemiBold"
-                       FontSize="40"
+                       FontSize="46"
                        TextAlignment="Center"
-                       Text="Demo MIEE - Nov 2020"
+                       Text="Demo Microsoft EDU"
                        Foreground="Purple">
             </TextBlock>
             <TextBlock Name="Author"
                        TextWrapping="WrapWholeWords"
                        FontStyle="Normal"
                        FontWeight="Normal"
-                       FontSize="30"
+                       FontSize="36"
                        TextAlignment="Center"
                        Text="Angelo Gino Varrati"
                        Foreground="Purple"
@@ -58,6 +58,7 @@
                        FontWeight="Bold" 
                        TextWrapping="Wrap"
                        HorizontalAlignment="Center"
+                       FontSize="24"
                        Text="Clicca sul bottone per caricare l'immagine da far valutare al modello ONNX!"
                        Margin="20"/>
 
