@@ -11,7 +11,7 @@
         Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
         IsRightTapEnabled="False">
 
-        <StackPanel Margin="50">
+        <StackPanel Margin="10">
             
             <!--General information-->
             <TextBlock Name="MainTitle"
